@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/background.jpg') fixed;
+  background-size: cover;
+}
+
+.wrap {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.info-row {
+  margin: 15px 0;
+}
+
+.info-block {
+  padding: 7px;
+  border-radius: 5px;
+  height: auto;
+  min-height: 100px;
+}
