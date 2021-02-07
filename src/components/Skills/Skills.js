@@ -2,9 +2,13 @@ import React from 'react'
 
 import '../../styles/Skills/Skills.css'
 import SkillsItem from './SkillsItem'
+import FrontendLogo from '../../images/frontend.svg'
+import BackendLogo from '../../images/backend.svg'
+import DatabaseLogo from '../../images/database.svg'
+import AdditionalLogo from '../../images/additional.svg'
 
 const frontendSkillsData = [
-    'React & Redux',
+    'React',
     'Xamarin Forms',
     'Windows Presentation Foundation',
     'Windows Forms'
@@ -23,7 +27,9 @@ const databaseSkillsData = [
 ];
 
 const additionalSkillsData = [
+    'Redux, Typescript',
     'OOA, OOD, OOP, UML',
+    'Unity',
     'ADO.NET, Entity Framework, Mongoose',
     'AJAX, SMTP',
     'Bootstrap, SemanticUI',
@@ -37,10 +43,14 @@ function Skills() {
         <div className="info-row">
             <div className="container">
                 <div className="skills info-block">
-                    <SkillsItem title="Frontend" logoPath="" skills={frontendSkillsData} />
-                    <SkillsItem title="Backend" logoPath="" skills={backendSkillsData} />
-                    <SkillsItem title="Database" logoPath="" skills={databaseSkillsData} />
-                    <SkillsItem title="Additional" logoPath="" skills={additionalSkillsData} />
+                    <div className="skills__row">
+                        <SkillsItem title="" logo={FrontendLogo} skills={frontendSkillsData} />
+                        <SkillsItem title="" logo={BackendLogo} skills={backendSkillsData} />
+                    </div>
+                    <div className="skills__row">
+                        <SkillsItem title="" logo={DatabaseLogo} skills={databaseSkillsData} />
+                        <SkillsItem title="" logo={AdditionalLogo} skills={additionalSkillsData} />
+                    </div>
                 </div>
             </div>
         </div>

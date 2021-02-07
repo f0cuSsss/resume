@@ -1,0 +1,41 @@
+.block-info {
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.block-info__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.block-info__logo {
+  margin: 10px 0;
+}
+
+.block-info__logo img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 535px) {
+  .block-info__logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .block-info {
+    min-width: 80px;
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+}

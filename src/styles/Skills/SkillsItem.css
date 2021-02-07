@@ -1,0 +1,69 @@
+.skills__item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.skills_list {
+  overflow: hidden;
+}
+
+.skills_list li {
+  color: rgb(218, 218, 218);
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.skills_list li::before {
+  content: '';
+  display: inline-block;
+  background: url('../../images/mark.svg') no-repeat;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+@media (max-width: 320px) {
+  .skills__item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills_list {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .skills__item .block-info {
+    width: 20%;
+  }
+
+  .skills__item .block-info img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 535px) {
+  .skills_list {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .skills__item {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.616);
+  }
+
+  .skills__item + .skills__item {
+    margin-top: 5px;
+  }
+}

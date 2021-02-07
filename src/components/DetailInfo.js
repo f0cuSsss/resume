@@ -2,20 +2,32 @@ import React from 'react'
 
 import '../styles/DetailInfo.css'
 
-function DetailInfo({ data }) {
+function DetailInfo({ name, detailInfo }) {
+
+    const renderTable = () => {
+        if(!detailInfo) {
+            return <tr>Something wrong!</tr>
+        }
+
+        return detailInfo.map(({ name, data }) => {
+            return (
+                <tr key={name}>
+                    <td>{name}</td>
+                    <td>{data.join("\n")}</td>
+                </tr>
+            );
+        });
+    }
+
     return (
         <div className="info-row">
             <div className="container">
                 <div className="detail-info info-block">
-                <table className="detail-info__table">
-                    <tr>
-                        <td>Phones</td>
-                        <td>+38067565478</td>
-                    </tr>
-                    <tr>
-                        <td>Phones</td>
-                        <td>+38067565478</td>
-                    </tr>
+                <div className="detail-info__name">{name}</div>
+                <table className="detail-info__table" >
+                    <tbody>
+                        {renderTable()}
+                    </tbody>
                 </table>
                 </div>
             </div>

@@ -3,35 +3,25 @@ import React from 'react'
 import '../../styles/Projects/ProjectsBlock.css'
 import Project from './Project'
 
-const projects = [
-    { title: '', stack: [], github: '' },
-    { title: '', stack: [], github: '' },
-    { title: '', stack: [], github: '' },
-    { title: '', stack: [], github: '' },
-    { title: '', stack: [], github: '' },
-    { title: '', stack: [], github: '' },
-    { title: '', stack: [], github: '' },
-    { title: '', stack: [], github: '' }
-];
+function ProjectsBlock({ projects }) {
 
-function ProjectsBlock() {
+    const renderProjectsList = () => {
+        if(!projects) {
+            return "Something wrong";
+        }
+
+        return projects.map(({ title, stack, github }) => <Project key={title} title={title} stack={stack} github={github} /> );
+    }
+
     return (
         <div className="info-row">
             <div className="container">
                 <div className="projects info-block">
-                   ---Projects---
+                   {renderProjectsList()}
                 </div>
             </div>
         </div>
     )
 }
-
-/*
- { projects ??
-                        projects.map(({ title, stack, github }) => {
-                            <Project title={title} stack={stack} github={github} />
-                        })
-                    }
-*/
 
 export default ProjectsBlock;

@@ -1,20 +1,26 @@
 import React from 'react'
 
 import '../../styles/Skills/SkillsItem.css'
+import BlockInfo from '../BlockInfo'
 
-function SkillsItem({ title, logoPath, skills }) {
+function SkillsItem({ title, logo, skills }) {
+
+    const renderSkillsList = () => {
+        if(!skills) {
+            return "Something wrong";
+        }
+
+        return skills.map(skill => <li key={skill}>{skill}</li> );
+    }
+
     return (
         <div className="skills__item">
-            <div className="skills__title">{title}</div>
-                <div className="skills__logo">
-                    
-                </div>
-                <div className="skills_list">
-                    <ul>
-                        <li>Skill 1</li>
-                        <li>Skill 2</li>
-                    </ul>
-                </div>
+            <BlockInfo title={title} logo={logo} />
+            <div className="skills_list">
+                <ul>
+                    {renderSkillsList()}
+                </ul>
+            </div>
         </div>
     )
 }

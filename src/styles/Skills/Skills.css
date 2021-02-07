@@ -1,3 +1,25 @@
 .skills {
-  background-color: rgb(57, 0, 110);
+  background-color: rgb(18, 66, 78);
+}
+
+.skills__row {
+  display: flex;
+}
+
+.skills__row + .skills__row {
+  margin-top: 20px;
+}
+
+@media (max-width: 1050px) {
+  .skills__row {
+    flex-direction: column;
+  }
+
+  .skills__row + .skills__row {
+    margin-top: 0;
+  }
+
+  .skills__row:last-child .skills__item:last-child {
+    border-bottom: none;
+  }
 }

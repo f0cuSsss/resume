@@ -6,13 +6,52 @@ header {
 .header__content {
   height: 70px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .header__title {
   color: #fff;
-  font-size: 38px;
+  font-size: 44px;
   font-weight: bold;
   letter-spacing: 5px;
+}
+
+.download-block {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  left: 10px;
+  transition: all 0.2s ease-in 0s;
+  animation-name: download;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+.download-block:hover {
+  cursor: pointer;
+  transform: scale(1.07);
+  transition: all 0.2s ease-in 0s;
+}
+
+@keyframes download {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 12px;
+  }
+}
+
+.download-block img {
+  width: 30px;
+  height: 30px;
 }

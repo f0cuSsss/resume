@@ -1,9 +1,20 @@
 .education {
   background-color: rgb(18, 66, 78);
-}
-
-.education__logo {
+  display: flex;
 }
 
 .education__list {
+  width: 70%;
+}
+
+@media (max-width: 535px) {
+  .education {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .education__list {
+    width: 100%;
+  }
 }
