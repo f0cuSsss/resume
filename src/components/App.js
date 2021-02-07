@@ -9,7 +9,7 @@ import ProjectsBlock from './Projects/ProjectsBlock'
 import SocialBlock from './Social/SocialBlock'
 
 const detailInfoData = [
-    { name: 'Phone numbers', data: ['+380666352216', '+380631058700'] },
+    { name: 'Phone numbers', data: ['+38(066) 63 52 216', '+38(063) 10 58 700'] },
     { name: 'E-mail', data: ['vladislav.parubchenko@gmail.com'] },
     { name: 'Date of birth', data: ['15.11.2000'] },
     { name: 'Languages', data: ['Russian (native)', 'Ukrainian (native)', 'English (intermediate)'] }
@@ -23,8 +23,9 @@ const educationData = [
 
 const projectsData = [
     { title: 'Resume', stack: ['React', 'Express'], github: 'https://github.com/f0cuSsss/resume' },
-    { title: 'Image fetching from Unsplash api', stack: ['JS'], github: 'https://github.com/f0cuSsss/unsplash_fetch' },
+    { title: 'Authorization with PassportJS', stack: ['NodeJS [Express]', 'MongoDB [Mongoose]'], github: 'https://github.com/f0cuSsss/auth' },
     { title: 'Search pictures - Unsplash', stack: ['React', 'Redux', 'axios'], github: 'https://github.com/f0cuSsss/react-unsplash' },
+    { title: 'Image fetching from Unsplash api', stack: ['JS'], github: 'https://github.com/f0cuSsss/unsplash_fetch' },
     { title: 'Search videos on Youtube', stack: ['React [hooks]', 'axios', 'SemanticUI'], github: 'https://github.com/f0cuSsss/Youtube-videos' },
     { title: 'Diagram builder (drawing a pie and bar chart)', stack: ['Windows Forms'], github: 'https://github.com/f0cuSsss/WF_DiagramBuilder' },
     { title: 'Travel agency database', stack: ['MSSQL'], github: 'https://github.com/f0cuSsss/Travel_DB' },
