@@ -22,7 +22,7 @@ const educationData = [
 ];
 
 const projectsData = [
-    { title: 'Resume', stack: ['React'], github: '' },
+    { title: 'Resume', stack: ['React', 'Express'], github: 'https://github.com/f0cuSsss/resume' },
     { title: 'Image fetching from Unsplash api', stack: ['JS'], github: 'https://github.com/f0cuSsss/unsplash_fetch' },
     { title: 'Search pictures - Unsplash', stack: ['React', 'Redux', 'axios'], github: 'https://github.com/f0cuSsss/react-unsplash' },
     { title: 'Search videos on Youtube', stack: ['React [hooks]', 'axios', 'SemanticUI'], github: 'https://github.com/f0cuSsss/Youtube-videos' },
