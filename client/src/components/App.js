@@ -6,7 +6,6 @@ import DetailInfo from './DetailInfo'
 import Education from './Education/Education'
 import Skills from './Skills/Skills'
 import ProjectsBlock from './Projects/ProjectsBlock'
-import SocialBlock from './Social/SocialBlock'
 
 const detailInfoData = [
     { name: 'Phone numbers', data: ['+38(066) 63 52 216', '+38(063) 10 58 700'] },
@@ -44,5 +43,5 @@ function App() {
         </>
     )
 }
-// <SocialBlock />
+
 export default App;

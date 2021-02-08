@@ -17,6 +17,7 @@
   letter-spacing: 2px;
   margin-top: 5px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .detail-info__table {
@@ -35,15 +36,31 @@
   padding-left: 10px;
   padding-right: 10px;
   white-space: pre-line;
+  word-wrap: break-word !important;
 }
 
 .detail-info__table tbody tr td:first-child {
   border-right: 1px dashed rgb(187, 187, 187);
 }
 
-@media (max-width: 360px) {
+@media (max-width: 330px) {
+  .detail-info__name {
+    font-size: 22px;
+  }
+
   .detail-info__table {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 390px) {
+  .detail-info__table {
+    table-layout: fixed;
     font-size: 14px;
+  }
+
+  .detail-info__table tbody tr td:first-child {
+    width: 35%;
   }
 }
 
