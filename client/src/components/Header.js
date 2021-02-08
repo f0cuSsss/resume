@@ -10,7 +10,7 @@ function Header({ title, name }) {
             <div className="container">
                 <div className="header__content">
                     <div className="download-block">
-                        <a href="#" >
+                        <a href="/resume/download" >
                             <img alt="download resume" src={downloadLogo} />
                         </a>
                     </div>
