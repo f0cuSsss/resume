@@ -1,10 +1,14 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../styles/Header.scss'
 import SocialBlock from './Social/SocialBlock'
 import downloadLogo from '../images/download.svg'
 
-function Header({ title, name }) {
+interface Props {
+    title: string
+}
+
+function Header({ title }: Props): JSX.Element {
     return (
         <header>
             <div className="container">

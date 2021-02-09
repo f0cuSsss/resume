@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../styles/index.scss'
 import Header from './Header'
@@ -7,20 +7,37 @@ import Education from './Education/Education'
 import Skills from './Skills/Skills'
 import ProjectsBlock from './Projects/ProjectsBlock'
 
-const detailInfoData = [
+type infoItemType = {
+    name: string,
+    data: Array<string>
+}
+
+type educationItemType = {
+    institution: string,
+    speciality: string,
+    year: string
+}
+
+type projectItemType = {
+    title: string,
+    stack: Array<string>,
+    github: string
+}
+
+const detailInfoData: Array<infoItemType> = [
     { name: 'Phone numbers', data: ['+38(066) 63 52 216', '+38(063) 10 58 700'] },
     { name: 'E-mail', data: ['vladislav.parubchenko@gmail.com'] },
     { name: 'Date of birth', data: ['15.11.2000'] },
     { name: 'Languages', data: ['Russian (native)', 'Ukrainian (native)', 'English (intermediate)'] }
 ];
 
-const educationData = [
+const educationData: Array<educationItemType> = [
     { institution: "Mykolayiv Construction College of Construction and Architecture", speciality: "121 «Software Engineering»", year: "2016 - 2020" },
     { institution: "IT-STEP Academy", speciality: "Software developer", year: "2018 - 2021" },
     { institution: "National university shipbuilding name of Admiral Makarov", speciality: "122 - Сomputer science", year: "2020 - 2022" }
 ];
 
-const projectsData = [
+const projectsData: Array<projectItemType> = [
     { title: 'Resume', stack: ['React', 'Express'], github: 'https://github.com/f0cuSsss/resume' },
     { title: 'Authorization with PassportJS', stack: ['React', 'Redux', 'NodeJS [Express]', 'MongoDB [Mongoose]'], github: 'https://github.com/f0cuSsss/auth' },
     { title: 'Search pictures - Unsplash', stack: ['React', 'Redux', 'axios'], github: 'https://github.com/f0cuSsss/react-unsplash' },
@@ -32,7 +49,7 @@ const projectsData = [
     { title: 'Telegram design. Conversation with a bot', stack: ['WPF'], github: 'https://github.com/f0cuSsss/WPF_ChatBot_TelegramDesign' }
 ];
 
-function App() {
+function App(): JSX.Element {
     return (
         <>
             <Header title="CV" />

@@ -1,8 +1,14 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../../styles/Education/EducationItem.scss'
 
-function EducationItem({ institution, speciality, year }) {
+interface Props {
+    institution: string,
+    speciality: string,
+    year: string
+}
+
+function EducationItem({ institution, speciality, year }: Props): JSX.Element {
     return (
         <div className="education__item">
             <div className="education__institution">{institution}</div>

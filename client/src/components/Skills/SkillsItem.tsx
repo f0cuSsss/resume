@@ -1,9 +1,15 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../../styles/Skills/SkillsItem.scss'
 import BlockInfo from '../BlockInfo'
 
-function SkillsItem({ title, logo, skills }) {
+interface Props {
+    title: string,
+    logo: string,
+    skills: Array<string>
+}
+
+function SkillsItem({ title, logo, skills }: Props): JSX.Element {
 
     const renderSkillsList = () => {
         if(!skills) {

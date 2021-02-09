@@ -1,9 +1,19 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../../styles/Projects/ProjectsBlock.scss'
 import Project from './Project'
 
-function ProjectsBlock({ projects }) {
+type projectItemType = {
+    title: string,
+    stack: Array<string>,
+    github: string
+}
+
+interface Props {
+    projects: Array<projectItemType>
+}
+
+function ProjectsBlock({ projects }: Props): JSX.Element {
 
     const renderProjectsList = () => {
         if(!projects) {

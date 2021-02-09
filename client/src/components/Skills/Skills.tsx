@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../../styles/Skills/Skills.scss'
 import SkillsItem from './SkillsItem'
@@ -7,26 +7,26 @@ import BackendLogo from '../../images/backend.svg'
 import DatabaseLogo from '../../images/database.svg'
 import AdditionalLogo from '../../images/additional.svg'
 
-const frontendSkillsData = [
+const frontendSkillsData: Array<string> = [
     'React',
     'Xamarin Forms',
     'Windows Presentation Foundation',
     'Windows Forms'
 ];
 
-const backendSkillsData = [
+const backendSkillsData: Array<string> = [
     'NodeJS [Express]',
     'ASP.NET MVC',
     'PHP'
 ];
 
-const databaseSkillsData = [
+const databaseSkillsData: Array<string> = [
     'MySQL',
     'MSSQL',
     'MongoDB'
 ];
 
-const additionalSkillsData = [
+const additionalSkillsData: Array<string> = [
     'Redux, Typescript',
     'OOA, OOD, OOP, UML',
     'Unity',
@@ -38,7 +38,7 @@ const additionalSkillsData = [
 ];
 
 
-function Skills() {
+function Skills(): JSX.Element {
     return (
         <div className="info-row">
             <div className="container">

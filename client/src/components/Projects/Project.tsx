@@ -1,9 +1,15 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../../styles/Projects/Project.scss'
 import githubLogo from '../../images/github.png'
 
-function Project({ title, stack, github }) {
+interface Props {
+    title: string,
+    stack: Array<string>,
+    github: string
+}
+
+function Project({ title, stack, github }: Props): JSX.Element {
 
     const renderStack = () => {
         if(!stack) {

@@ -1,12 +1,21 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../../styles/Education/Education.scss'
 import EducationItem from './EducationItem'
 import BlockInfo from '../BlockInfo'
 import educationLogo from '../../images/education.svg'
 
+type education = {
+    institution: string,
+    speciality: string,
+    year: string
+}
 
-function Education({ educations }) {
+interface Props {
+    educations: Array<education>
+}
+
+function Education({ educations }: Props): JSX.Element {
 
     const renderEducationList = () => {
         if(!educations) {

@@ -1,8 +1,18 @@
-import React from 'react'
+import * as React from 'react'
 
 import '../styles/DetailInfo.scss'
 
-function DetailInfo({ name, detailInfo }) {
+type infoItemType = {
+    name: string,
+    data: Array<string>
+}
+
+interface Props {
+    name: string,
+    detailInfo: Array<infoItemType>
+}
+
+function DetailInfo({ name, detailInfo }: Props): JSX.Element {
 
     const renderTable = () => {
         if(!detailInfo) {

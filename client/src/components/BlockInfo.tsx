@@ -2,7 +2,13 @@ import React from 'react'
 
 import '../styles/BlockInfo.scss'
 
-function BlockInfo({ column, title, logo }) {
+interface Props {
+    column?: boolean,
+    title: string,
+    logo: string
+}
+
+function BlockInfo({ column, title, logo }: Props): JSX.Element {
 
     const renderTitle = () => {
         if(!title) {
