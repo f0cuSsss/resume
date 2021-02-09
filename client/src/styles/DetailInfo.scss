@@ -1,12 +1,9 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
 .detail-info {
-  background-color: rgb(18, 66, 78);
-}
-/* background-color: #89ebc6; */
-.detail-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: $block_bgcolor;
+  @include displayFlexCenter(column);
 }
 
 .detail-info__name {
@@ -23,24 +20,22 @@
 .detail-info__table {
   width: 80%;
   border-collapse: collapse;
-  color: rgb(218, 218, 218);
+  color: $mainText_color;
   font-size: 17px;
-}
 
-.detail-info__table tbody tr {
-  border-bottom: 1px solid rgb(187, 187, 187);
-}
-
-.detail-info__table tbody tr td {
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  white-space: pre-line;
-  word-wrap: break-word !important;
-}
-
-.detail-info__table tbody tr td:first-child {
-  border-right: 1px dashed rgb(187, 187, 187);
+  tbody tr {
+    border-bottom: 1px solid $border_color;
+    td {
+      padding: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      white-space: pre-line;
+      word-wrap: break-word !important;
+      &:first-child {
+        border-right: 1px dashed $border_color;
+      }
+    }
+  }
 }
 
 @media (max-width: 330px) {
@@ -57,10 +52,10 @@
   .detail-info__table {
     table-layout: fixed;
     font-size: 14px;
-  }
 
-  .detail-info__table tbody tr td:first-child {
-    width: 35%;
+    tbody tr td:first-child {
+      width: 35%;
+    }
   }
 }
 

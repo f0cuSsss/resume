@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../styles/Projects/Project.css'
+import '../../styles/Projects/Project.scss'
 import githubLogo from '../../images/github.png'
 
 function Project({ title, stack, github }) {

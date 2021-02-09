@@ -1,5 +1,7 @@
+@import '../variables.scss';
+
 .projects {
-  background-color: rgb(18, 66, 78);
+  background-color: $block_bgcolor;
   display: flex;
   flex-direction: column;
 }

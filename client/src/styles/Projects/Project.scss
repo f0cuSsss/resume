@@ -1,0 +1,76 @@
+@import '../variables.scss';
+
+.project__item {
+  display: flex;
+  padding: 5px 0;
+  border-bottom: 1px solid $border_color;
+
+  & + & {
+    margin-top: 15px;
+  }
+
+  &::before {
+    content: '';
+    margin-right: 6px;
+    display: inline-block;
+    background: url('../../images/bookmark.svg') no-repeat;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+  }
+
+  .project__content {
+    width: 70%;
+  }
+}
+
+.project__title {
+  font-size: 20px;
+  color: $mainText_color;
+}
+
+.project__stack-list {
+  margin-top: 5px;
+  margin-left: 10px;
+
+  li {
+    list-style-type: none;
+    text-decoration: none;
+    color: $detailText_color;
+    font-size: 18px;
+
+    &:before {
+      content: '';
+      margin-right: 6px;
+      display: inline-block;
+      background: url('../../images/tick.svg') no-repeat;
+      vertical-align: middle;
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+.project__github {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  width: 30%;
+  transition: transform 0.2s ease-in 0s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in 0s;
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project__github {
+    justify-content: flex-end;
+  }
+}

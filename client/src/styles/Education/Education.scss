@@ -1,5 +1,7 @@
+@import '../variables.scss';
+
 .education {
-  background-color: rgb(18, 66, 78);
+  background-color: $block_bgcolor;
   display: flex;
 }
 

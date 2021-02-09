@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/DetailInfo.css'
+import '../styles/DetailInfo.scss'
 
 function DetailInfo({ name, detailInfo }) {
 

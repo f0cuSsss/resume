@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../styles/Social/SocialItem.css'
+import '../../styles/Social/SocialItem.scss'
 
 function SocialItem({ alt, src, link }) {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../styles/Projects/ProjectsBlock.css'
+import '../../styles/Projects/ProjectsBlock.scss'
 import Project from './Project'
 
 function ProjectsBlock({ projects }) {

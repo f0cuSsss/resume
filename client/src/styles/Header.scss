@@ -1,15 +1,15 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
 header {
   width: 100%;
-  background-color: #070504;
+  background-color: $headerBg_color;
 }
 
 .header__content {
   height: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  @include displayFlexCenter(row);
 }
 
 .header__title {
@@ -34,12 +34,15 @@ header {
   animation-iteration-count: 4;
   animation-direction: alternate;
   animation-delay: 1s;
-}
-
-.download-block:hover {
-  cursor: pointer;
-  transform: scale(1.07);
-  transition: all 0.2s ease-in 0s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 0.2s ease-in 0s;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @keyframes download {
@@ -49,9 +52,4 @@ header {
   100% {
     top: 12px;
   }
-}
-
-.download-block img {
-  width: 30px;
-  height: 30px;
 }

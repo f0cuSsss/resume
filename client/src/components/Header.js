@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/Header.css'
+import '../styles/Header.scss'
 import SocialBlock from './Social/SocialBlock'
 import downloadLogo from '../images/download.svg'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../styles/Skills/Skills.css'
+import '../../styles/Skills/Skills.scss'
 import SkillsItem from './SkillsItem'
 import FrontendLogo from '../../images/frontend.svg'
 import BackendLogo from '../../images/backend.svg'

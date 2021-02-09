@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/BlockInfo.css'
+import '../styles/BlockInfo.scss'
 
 function BlockInfo({ column, title, logo }) {
 

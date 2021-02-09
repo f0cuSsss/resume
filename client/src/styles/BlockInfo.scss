@@ -1,16 +1,15 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
 .block-info {
+  @include displayFlexCenter(row);
   width: 30%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
 .block-info__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayFlexCenter(row);
   width: 100%;
   font-size: 24px;
   color: #fff;
@@ -20,11 +19,10 @@
 
 .block-info__logo {
   margin: 10px 0;
-}
-
-.block-info__logo img {
-  width: 100px;
-  height: 100px;
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 535px) {

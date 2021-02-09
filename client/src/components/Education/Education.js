@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../styles/Education/Education.css'
+import '../../styles/Education/Education.scss'
 import EducationItem from './EducationItem'
 import BlockInfo from '../BlockInfo'
 import educationLogo from '../../images/education.svg'

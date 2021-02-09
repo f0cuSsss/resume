@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../styles/Education/EducationItem.css'
+import '../../styles/Education/EducationItem.scss'
 
 function EducationItem({ institution, speciality, year }) {
     return (

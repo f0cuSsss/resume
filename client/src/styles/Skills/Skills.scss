@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.skills {
+  background-color: $block_bgcolor;
+}
+
+.skills__row {
+  display: flex;
+  & + & {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .skills__row {
+    flex-direction: column;
+    & + & {
+      margin-top: 0;
+    }
+    &:last-child {
+      .skills__item:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

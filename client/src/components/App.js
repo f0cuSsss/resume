@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/index.css'
+import '../styles/index.scss'
 import Header from './Header'
 import DetailInfo from './DetailInfo'
 import Education from './Education/Education'

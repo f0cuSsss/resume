@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../styles/Skills/SkillsItem.css'
+import '../../styles/Skills/SkillsItem.scss'
 import BlockInfo from '../BlockInfo'
 
 function SkillsItem({ title, logo, skills }) {
