@@ -4,15 +4,10 @@ import '../../styles/Education/Education.scss'
 import EducationItem from './EducationItem'
 import BlockInfo from '../BlockInfo'
 import educationLogo from '../../images/education.svg'
-
-type education = {
-    institution: string,
-    speciality: string,
-    year: string
-}
+import { educationItemType } from '../../types/types'
 
 interface Props {
-    educations: Array<education>
+    educations: Array<educationItemType>
 }
 
 function Education({ educations }: Props): JSX.Element {

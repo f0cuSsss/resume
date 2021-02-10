@@ -1,11 +1,7 @@
 import * as React from 'react'
+import { infoItemType } from '../types/types'
 
 import '../styles/DetailInfo.scss'
-
-type infoItemType = {
-    name: string,
-    data: Array<string>
-}
 
 interface Props {
     name: string,

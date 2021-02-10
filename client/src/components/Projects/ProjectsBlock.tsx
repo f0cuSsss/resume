@@ -2,12 +2,7 @@ import * as React from 'react'
 
 import '../../styles/Projects/ProjectsBlock.scss'
 import Project from './Project'
-
-type projectItemType = {
-    title: string,
-    stack: Array<string>,
-    github: string
-}
+import { projectItemType } from '../../types/types'
 
 interface Props {
     projects: Array<projectItemType>

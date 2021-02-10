@@ -6,23 +6,11 @@ import DetailInfo from './DetailInfo'
 import Education from './Education/Education'
 import Skills from './Skills/Skills'
 import ProjectsBlock from './Projects/ProjectsBlock'
-
-type infoItemType = {
-    name: string,
-    data: Array<string>
-}
-
-type educationItemType = {
-    institution: string,
-    speciality: string,
-    year: string
-}
-
-type projectItemType = {
-    title: string,
-    stack: Array<string>,
-    github: string
-}
+import { 
+    infoItemType, 
+    educationItemType, 
+    projectItemType 
+} from '../types/types'
 
 const detailInfoData: Array<infoItemType> = [
     { name: 'Phone numbers', data: ['+38(066) 63 52 216', '+38(063) 10 58 700'] },
