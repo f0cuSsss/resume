@@ -27,12 +27,12 @@ const databaseSkillsData: Array<string> = [
 ];
 
 const additionalSkillsData: Array<string> = [
-    'Redux, Typescript',
+    'Typescript, Redux, Webpack',
     'OOA, OOD, OOP, UML',
     'Unity',
     'ADO.NET, Entity Framework, Mongoose',
     'AJAX, SMTP',
-    'Bootstrap, SemanticUI',
+    'SCSS, Bootstrap, SemanticUI',
     'Design patterns',
     'GIT'
 ];

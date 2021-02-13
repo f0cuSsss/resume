@@ -29,12 +29,20 @@ function DetailInfo({ name, detailInfo }: Props): JSX.Element {
         <div className="info-row">
             <div className="container">
                 <div className="detail-info info-block">
-                <div className="detail-info__name">{name}</div>
-                <table className="detail-info__table" >
-                    <tbody>
-                        {renderTable()}
-                    </tbody>
-                </table>
+                    <div className="detail-info__header">
+                        <div className="detail-info__name">{name}</div>
+                        <div className="detail-info__description">
+                            <span>Mykolaiv or remote</span>
+                            <span>
+                                For vacancy <div className="vacancy">Frontend</div> | <div className="vacancy">Fullstack</div> | <div className="vacancy">Backend</div> developer
+                            </span>
+                        </div>
+                    </div>
+                    <table className="detail-info__table" >
+                        <tbody>
+                            {renderTable()}
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

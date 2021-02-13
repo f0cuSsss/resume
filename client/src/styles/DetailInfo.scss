@@ -6,15 +6,48 @@
   @include displayFlexCenter(column);
 }
 
-.detail-info__name {
-  color: #fff;
-  text-decoration: underline;
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  text-align: center;
+.detail-info__header {
+  .detail-info__name {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    @media (max-width: 330px) {
+      font-size: 22px;
+    }
+  }
+
+  .detail-info__description {
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+
+    & span {
+      color: $mainText_color;
+      display: block;
+      font-size: 18px;
+      padding: 3px 0;
+
+      .vacancy {
+        display: inline;
+        color: $detailText_color;
+      }
+    }
+
+    & span:first-child::before {
+      content: '';
+      display: inline-block;
+      background: url('../images/gps.svg') no-repeat;
+      width: 18px;
+      height: 18px;
+      vertical-align: text-top;
+      padding-left: 6px;
+    }
+  }
 }
 
 .detail-info__table {
@@ -24,6 +57,7 @@
   font-size: 17px;
 
   tbody tr {
+    border-top: 1px solid $border_color;
     border-bottom: 1px solid $border_color;
     td {
       padding: 5px;
@@ -36,31 +70,20 @@
       }
     }
   }
-}
 
-@media (max-width: 330px) {
-  .detail-info__name {
-    font-size: 22px;
-  }
-
-  .detail-info__table {
+  @media (max-width: 330px) {
     font-size: 13px;
   }
-}
 
-@media (max-width: 390px) {
-  .detail-info__table {
+  @media (max-width: 390px) {
     table-layout: fixed;
     font-size: 14px;
-
     tbody tr td:first-child {
       width: 35%;
     }
   }
-}
 
-@media (max-width: 710px) {
-  .detail-info__table {
+  @media (max-width: 710px) {
     width: 100%;
   }
 }
